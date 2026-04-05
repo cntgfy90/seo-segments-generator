@@ -1,0 +1,16 @@
+# compiled output
+/seo-generator/dist
+/seo-generator/node_modules
+/seo-generator/build
+
+# Logs
+/seo-generator/logs
+/seo-generator/*.log
+/seo-generator/npm-debug.log*
+
+# dotenv environment variable files
+/seo-generator/.env
+
+# temp directory
+/seo-generator/.temp
+/seo-generator/.tmp

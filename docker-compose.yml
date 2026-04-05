@@ -1,0 +1,20 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+  flowise:
+    build: ./flowise
+    ports:
+      - "3010:3000"
+    volumes:
+      - flowise_data:/root/.flowise
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:
+  flowise_data:
